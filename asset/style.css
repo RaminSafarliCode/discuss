@@ -1,0 +1,507 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  height: 100%;
+}
+
+#head_fix {
+  position: fixed;
+  width: 100%;
+  background-color: black;
+  font-size: 15px;
+  color: white;
+  text-transform: uppercase;
+  z-index: 2;
+}
+.nav_header {
+  display: flex;
+  justify-content: space-between;
+}
+.nav_header .all_ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.a_style {
+  text-decoration: none;
+  color: white;
+}
+
+.all_ul li {
+  padding: 12px 24px;
+}
+
+.all_ul li:hover {
+  background-color: #ccc;
+  color: black;
+}
+.all_ul li:hover a {
+  color: black;
+}
+
+.hd_more {
+  position: relative;
+}
+
+.for_more {
+  position: absolute;
+  display: none;
+  background-color: white;
+  color: black;
+  top: 100%;
+  left: 0%;
+  width: 160px;
+  box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+  text-transform: none;
+}
+.hd_more:hover .for_more {
+  display: block;
+}
+
+.fas {
+  font-size: 14px;
+}
+
+.search_icon {
+  padding: 12px 24px;
+}
+.search_icon:hover {
+  background-color: red;
+}
+
+main {
+  padding-top: 46px;
+}
+
+.bg-image-first {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 730px;
+  color: white;
+  position: relative;
+
+  animation-name: slide;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes slide {
+  0% {
+    background-image: url(./images/la.jpg);
+  }
+  50% {
+    background-image: url(./images/ny.jpg);
+  }
+  100% {
+    background-image: url(./images/chicago.jpg);
+  }
+}
+.bg-image-second {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 730px;
+  color: white;
+  position: relative;
+}
+.bg-image-third {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 730px;
+  color: white;
+  position: relative;
+}
+
+/* @keyframes slide-1 {
+  0% {
+    display: block;
+  }
+  50% {
+    display: none;
+  }
+  100% {
+    display: none;
+  }
+}
+
+@keyframes slide-2 {
+  0% {
+    display: none;
+  }
+  50% {
+    display: block;
+  }
+  100% {
+    display: none;
+  }
+}
+
+@keyframes slide-3 {
+  0% {
+    display: none;
+  }
+  50% {
+    display: none;
+  }
+  100% {
+    display: block;
+  }
+} */
+
+.for_bottom_sc {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  text-align: center;
+  padding: 32px 16px;
+}
+
+.for_bottom_sc h3 {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 10px 0px 10px 0px;
+}
+
+.for_bottom_sc span {
+  font-weight: bolder;
+}
+
+.the_band {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 64px 16px;
+}
+
+h2 {
+  text-align: center;
+  letter-spacing: 4px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+
+.love_music {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.the_band p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.boxes {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+}
+
+.photographer_img {
+  width: 33%;
+  text-align: center;
+}
+
+.photographer_img img {
+  width: 60%;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.names {
+  text-align: center;
+}
+
+.names {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.sc_third {
+  background-color: black;
+  color: white;
+}
+
+.tour_dates {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 64px 16px;
+}
+
+.tour_dates_span {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.remember_spans {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-style: italic;
+  opacity: 0.6;
+  font-size: 15px;
+}
+
+.section_ul {
+  color: #757575;
+}
+
+.section_list {
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  padding: 8px 16px;
+}
+
+.sold_out::after {
+  content: "Sold out";
+  background-color: #f44336;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-right: 8px;
+  position: relative;
+  left: 3%;
+  color: white;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.number_notf {
+  position: relative;
+}
+
+.number_notf::after {
+  content: "3";
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  position: absolute;
+  padding: 3px 8px;
+  left: 85%;
+}
+
+.buy_tickets_sc {
+  display: flex;
+  width: 100%;
+  padding: 32px 0px 32px 0px;
+}
+
+.city {
+  width: 33%;
+  padding: 0 8px;
+}
+
+.city img {
+  width: 100%;
+  margin: 0px;
+}
+
+.information {
+  background-color: white;
+  padding: 16px 16px;
+  margin-top: -21px;
+}
+
+.city_name {
+  color: black;
+  font-weight: bold;
+  font-style: normal;
+  margin: 15px 0px;
+}
+
+.date {
+  opacity: 0.6;
+  color: black;
+  margin: 15px 0px;
+}
+
+.extra_info {
+  color: black;
+  margin: 15px 0px;
+}
+
+.buy_ticket {
+  margin-bottom: 16px;
+  background-color: black;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.buy_ticket:hover {
+  background-color: #ccc;
+}
+
+.contact {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 64px 16px;
+}
+
+.contact_input {
+  display: flex;
+  width: 100%;
+  padding: 32px 0px;
+}
+
+.divison_name_email {
+  display: flex;
+  margin: 0px -8px 8px -8px;
+}
+
+.info_part {
+  width: 50%;
+  font-size: 18px;
+}
+
+.input_part {
+  width: 50%;
+}
+
+.fa {
+  width: 30px;
+}
+
+::placeholder {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+}
+
+.input_name_email {
+  width: 50%;
+  padding: 0px 8px;
+}
+
+.name_email_style {
+  border: 1px solid #ccc;
+  padding: 8px;
+  width: 100%;
+}
+
+.marg_left {
+  margin-left: 23.5px;
+}
+
+.input_meassage {
+  width: 100%;
+}
+
+.button_send_div {
+  display: flex;
+  justify-content: flex-end;
+  margin: 16px 0px;
+}
+
+.send_btn {
+  padding: 8px 16px;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  color: white;
+  text-transform: uppercase;
+  background-color: black;
+  border: none;
+}
+
+.map_bg {
+  background-image: url(./images/map.jpg);
+  filter: grayscale(50%);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+  position: relative;
+  height: 855px;
+}
+
+footer {
+  padding: 64px 16px;
+  opacity: 0.6;
+}
+
+.icons {
+  text-align: center;
+  font-size: 24px;
+}
+
+.icon_width {
+  width: 22px;
+}
+
+.footer_span {
+  margin: 15px 0px;
+}
+
+.footer_span a {
+  color: black;
+}
+
+@media (max-width: 600px) {
+  .buy_tickets_sc {
+    flex-direction: column;
+  }
+  .city {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .boxes {
+    flex-direction: column;
+  }
+  .photographer_img {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact_input {
+    flex-direction: column;
+  }
+  .info_part {
+    width: 100%;
+  }
+  .input_part {
+    width: 100%;
+  }
+  .divison_name_email {
+    flex-direction: column;
+    margin-top: 16px;
+  }
+  .input_name_email {
+    width: 100%;
+  }
+}
